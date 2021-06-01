@@ -1,16 +1,23 @@
 <?php
-include_once 'includes/db.php';
+include_once 'db.php';
+$db = getSupercarData();
+
+?>
+
+<!DOCTYPE html>
+<head>
+    <title></title>
+</head>
+<body>
+<?php
+echo displaySupercarData($db);
 ?>
 
 
 
+</body>
+</html>
 
-
-/* function getSupercars($supercarDB): array
-{*/
-    $query = $supercarDB->prepare('SELECT * FROM `supercars`');
-    $query->execute();
-    return $supercars = $query->fetchAll();
 
 
 
