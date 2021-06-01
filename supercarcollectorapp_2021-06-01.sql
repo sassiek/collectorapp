@@ -7,7 +7,7 @@
 #
 # Host: 127.0.0.1 (MySQL 5.7.34)
 # Database: supercarcollectorapp
-# Generation Time: 2021-06-01 12:53:02 +0000
+# Generation Time: 2021-06-01 13:45:41 +0000
 # ************************************************************
 
 
@@ -33,8 +33,24 @@ CREATE TABLE `supercars` (
   `bhp` int(11) NOT NULL,
   `top speed (mph)` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
 
+LOCK TABLES `supercars` WRITE;
+/*!40000 ALTER TABLE `supercars` DISABLE KEYS */;
+
+INSERT INTO `supercars` (`id`, `make`, `model`, `bhp`, `top speed (mph)`)
+VALUES
+	(1,'Aston Martin','One-77',750,220),
+	(2,'Bugatti','Chiron',1479,261),
+	(3,'Ferrari','488 Spider',660,203),
+	(4,'Lamborghini','Huracan Performante',631,204),
+	(5,'McLaren','720S',710,212),
+	(6,'Porsche','911 GT3',503,198),
+	(7,'Rimac','Nevera',1888,258),
+	(8,'Ford','GT Mk II',647,216);
+
+/*!40000 ALTER TABLE `supercars` ENABLE KEYS */;
+UNLOCK TABLES;
 
 
 
