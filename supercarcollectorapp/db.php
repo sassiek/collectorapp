@@ -13,7 +13,7 @@ class db extends TestCase
                 'model' => 'One-77',
                 'bhp' => '750',
                 'top_speed_mph' => '220'
-                ]
+            ]
         ];
 
         $expected = '<div class="section"><div class="supercarSection">'
@@ -42,4 +42,3 @@ class db extends TestCase
         displaySupercarData($input);
     }
 }
-

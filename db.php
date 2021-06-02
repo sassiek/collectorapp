@@ -16,7 +16,7 @@ function getSupercarData()
     return $result;
 }
 
-function displaySupercarData(array $supercars):string
+function displaySupercarData(array $supercars): string
 {
     $display = '<div class="section">';
     foreach ($supercars as $supercar) {
@@ -30,4 +30,3 @@ function displaySupercarData(array $supercars):string
     $display .= '</div>';
     return $display;
 }
-
