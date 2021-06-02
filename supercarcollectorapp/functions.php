@@ -1,9 +1,9 @@
 <?php
 
-require_once '../db.php';
+require_once '../functions.php';
 use PHPUnit\Framework\TestCase;
 
-class db extends TestCase
+class functions extends TestCase
 {
    public function testDisplaySupercarData_success()
     {
