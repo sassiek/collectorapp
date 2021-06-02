@@ -1,11 +1,11 @@
-.supercarSection {
+.section {
     display: flex;
     gap: 20px;
     background-color: #474c58;
     margin: 1%;
 }
 
-.information {
+.supercarSection {
     margin: auto;
     width: 270px;
     height: 270px;

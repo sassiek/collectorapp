@@ -16,15 +16,15 @@ function getSupercarData()
     return $result;
 }
 
-function displaySupercarData($supercars)
+function displaySupercarData(array $supercars):string
 {
     $display = '<div class="section">';
     foreach ($supercars as $supercar) {
         $display .= '<div class="supercarSection">'
-            . '<p class="information">' . 'Make: ' . '<span>' . $supercar['make'] . '</span>' . '</p>'
-            . '<p class="information">' . 'Model: ' . '<span>' . $supercar['model'] . '</span>' . '</p>'
-            . '<p class="information">' . 'BHP: ' . '<span>' . $supercar['bhp'] . '</span>' . '</p>'
-            . '<p class="information">' . 'Top Speed (mph): ' . '<span>' . $supercar['top_speed_mph'] . '</span>' . '</p>'
+            . '<p>' . 'Make: ' . '<span>' . $supercar['make'] . '</span>' . '</p>'
+            . '<p>' . 'Model: ' . '<span>' . $supercar['model'] . '</span>' . '</p>'
+            . '<p>' . 'BHP: ' . '<span>' . $supercar['bhp'] . '</span>' . '</p>'
+            . '<p>' . 'Top Speed (mph): ' . '<span>' . $supercar['top_speed_mph'] . '</span>' . '</p>'
             . '</div>';
     }
     $display .= '</div>';
