@@ -1,17 +1,35 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #004225;
+    font-family: 'Racing Sans One', cursive;
+}
+
+h1 {
+    background-color: #004225;
+    padding: 25px;
+    text-align: center;
+    font-size: 3rem;
+}
+
 .section {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto auto;
     gap: 20px;
-    background-color: #474c58;
+    background-color: #004225;
     margin: 1%;
+    padding: 20px;
 }
 
 .supercarSection {
     margin: auto;
     width: 270px;
     height: 270px;
-    background: #c0b1e1;
-    border: 5px solid #c5e0dd;
+    background: #bd162c;
+    border: 5px solid #000000;
     padding: 7px;
     text-align: center;
-    font-size: 0.85rem;
+    font-size: 1.25rem;
 }
