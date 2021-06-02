@@ -16,16 +16,6 @@ $db = getSupercarData();
 <?php
 echo displaySupercarData($db);
 ?>
-<!--
-<div class="section">
-    <div class="supercarSection">
-        <p class="information"></p>
-        <p class="information"></p>
-        <p class="information"></p>
-        <p class="information"></p>
-    </div>
-</div> -->
-
 </body>
 </html>
 
