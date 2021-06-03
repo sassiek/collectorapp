@@ -13,7 +13,11 @@ $db = getSupercarData();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-<h1>Supercar Collection</h1>
+<button class="formLinkButton" name="add_to_collection" type="button" onclick="document.location='form.php'">Add To The Collection</button>
+<div class="title">
+    <img src="lamborghini.jpg" alt="supercar background" width="600">
+    <h1>Supercar<br>Collection</h1>
+</div>
 <?php
 echo displaySupercarData($db);
 ?>
